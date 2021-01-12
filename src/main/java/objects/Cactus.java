@@ -16,7 +16,7 @@ public class Cactus extends BadBoys {
         this.character = character;
         img = Resource.getResourceImage("data/cactus1.png");
         posX = 200;
-        posY = 65;
+        posY = 80;
         rect = new Rectangle();
     }
 

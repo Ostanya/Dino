@@ -13,7 +13,7 @@ public class GameScreen extends JPanel implements Runnable, KeyListener {
     public static final int GAME_PLAY_START = 1;
     public static final int GAME_OVER_START = 2;
     public static final float GRAVITY = 0.1f;
-    public static final float GROUNDY = 110;
+    public static final float GROUNDY = 130;
 
     private MainBody character;
     private Thread thread;
@@ -108,12 +108,12 @@ public class GameScreen extends JPanel implements Runnable, KeyListener {
         manageBadBoys.reset();
     }
 
-    @Override
-    public void keyTyped(KeyEvent e) {}
+     @Override
+     public void keyTyped(KeyEvent e) {}
 
-    @Override
-    public void keyPressed(KeyEvent e) {
-    }
+     @Override
+     public void keyPressed(KeyEvent e) {
+     }
 
     @Override
     public void keyReleased(KeyEvent e) {
@@ -122,7 +122,9 @@ public class GameScreen extends JPanel implements Runnable, KeyListener {
                 if(gameStart == GAME_FIRST_START) {
                     gameStart = GAME_PLAY_START;
                 }else if (gameStart == GAME_PLAY_START) {
+                    if(character.getSpeedY() == 0) {
                     character.jump();
+                    }
                 }
                 else if(gameStart == GAME_OVER_START) {
                     getReset();
