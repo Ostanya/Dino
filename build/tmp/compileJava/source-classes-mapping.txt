@@ -5,10 +5,10 @@ Main.java
  Main
 objects/BadBoys.java
  objects.BadBoys
-util/MoveBody.java
- util.MoveBody
-objects/GameScreen.java
- objects.GameScreen
+objects/Cactus.java
+ objects.Cactus
+objects/ManageBadBoys.java
+ objects.ManageBadBoys
 objects/Clouds.java
  objects.Clouds
  objects.Clouds$Cloud
@@ -18,7 +18,7 @@ util/Resource.java
  util.Resource
 util/BackGround.java
  util.BackGround
-objects/Cactus.java
- objects.Cactus
-objects/ManageBadBoys.java
- objects.ManageBadBoys
+objects/GameScreen.java
+ objects.GameScreen
+util/MoveBody.java
+ util.MoveBody
